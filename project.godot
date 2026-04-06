@@ -17,7 +17,7 @@ config/icon="res://assets/img/icon.svg"
 
 [autoload]
 
-Events="*uid://d4m4st3j3xjnq"
+PACBox="*uid://c186q2k21dmw6"
 
 [global_group]
 

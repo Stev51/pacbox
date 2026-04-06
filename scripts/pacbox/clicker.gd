@@ -33,7 +33,7 @@ func update_display_mode(mode: DisplayMode) -> void:
 			anim_sprite_node.visible = false
 
 func call_event() -> void:
-	Events.call_event(event_id)
+	PACBox.call_event(event_id)
 
 func still_img() -> void:
 	update_display_mode(DisplayMode.STILL_IMAGE)

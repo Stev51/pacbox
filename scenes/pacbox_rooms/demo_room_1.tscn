@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b1fetgx2j4ydl"]
+
+[ext_resource type="PackedScene" uid="uid://coxckt01weaih" path="res://scenes/pacbox/clicker.tscn" id="1_bdqe5"]
+[ext_resource type="Texture2D" uid="uid://cve5y8yu2u00b" path="res://assets/img/icon.svg" id="2_u5lcn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3oo3"]
+size = Vector2(128, 128)
+
+[node name="DemoRoom1" type="Node2D" unique_id=285811660]
+
+[node name="Clickers" type="Node2D" parent="." unique_id=1752323861]
+
+[node name="Clicker1" parent="Clickers" unique_id=881771067 instance=ExtResource("1_bdqe5")]
+position = Vector2(312, 157)
+still_image = ExtResource("2_u5lcn")
+event_id = "test1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickers/Clicker1" unique_id=1353480532]
+shape = SubResource("RectangleShape2D_q3oo3")
+
+[node name="Clicker2" parent="Clickers" unique_id=278429788 instance=ExtResource("1_bdqe5")]
+position = Vector2(816, 156)
+still_image = ExtResource("2_u5lcn")
+event_id = "test2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickers/Clicker2" unique_id=1250612019]
+shape = SubResource("RectangleShape2D_q3oo3")

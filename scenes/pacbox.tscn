@@ -1,27 +1,11 @@
 [gd_scene format=3 uid="uid://c186q2k21dmw6"]
 
 [ext_resource type="Script" uid="uid://cwh73vxracxx5" path="res://scripts/pacbox/pacbox.gd" id="1_smwuo"]
-[ext_resource type="PackedScene" uid="uid://coxckt01weaih" path="res://scenes/pacbox/clicker.tscn" id="1_v2que"]
-[ext_resource type="Texture2D" uid="uid://cve5y8yu2u00b" path="res://assets/img/icon.svg" id="2_smwuo"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v2que"]
-size = Vector2(128, 128)
+[ext_resource type="PackedScene" uid="uid://b1fetgx2j4ydl" path="res://scenes/pacbox_rooms/demo_room_1.tscn" id="2_v2que"]
 
 [node name="PACBox" type="Node2D" unique_id=191530559]
 script = ExtResource("1_smwuo")
 
-[node name="Clicker" parent="." unique_id=1396895806 instance=ExtResource("1_v2que")]
-position = Vector2(499, 304)
-still_image = ExtResource("2_smwuo")
-event_id = "test1"
+[node name="Room" type="Node2D" parent="." unique_id=635444880]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Clicker" unique_id=1188062617]
-shape = SubResource("RectangleShape2D_v2que")
-
-[node name="Clicker2" parent="." unique_id=881771067 instance=ExtResource("1_v2que")]
-position = Vector2(555, 248)
-still_image = ExtResource("2_smwuo")
-event_id = "test2"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Clicker2" unique_id=351554672]
-shape = SubResource("RectangleShape2D_v2que")
+[node name="DemoRoom1" parent="Room" unique_id=285811660 instance=ExtResource("2_v2que")]
