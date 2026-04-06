@@ -4,11 +4,11 @@ func call_event(id: String) -> void:
 	match id:
 		"demo_event_go_room1":
 			
-			print("PLACEHOLDER: Go to room #1")
+			PACBox.switch_room("demo_room_1")
 			
 		"demo_event_go_room2":
 			
-			print("PLACEHOLDER: Go to room #2")
+			PACBox.switch_room("demo_room_2")
 			
 		"demo_event_dialog_1":
 			

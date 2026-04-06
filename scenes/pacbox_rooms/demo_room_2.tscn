@@ -13,7 +13,7 @@ size = Vector2(128, 128)
 [node name="Clicker1" parent="Clickers" unique_id=881771067 instance=ExtResource("1_u5g57")]
 position = Vector2(310, 475)
 still_image = ExtResource("2_gbtlj")
-event_id = "test1"
+event_id = "demo_event_dialog_2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clickers/Clicker1" unique_id=1353480532]
 shape = SubResource("RectangleShape2D_q3oo3")
@@ -21,7 +21,7 @@ shape = SubResource("RectangleShape2D_q3oo3")
 [node name="Clicker2" parent="Clickers" unique_id=278429788 instance=ExtResource("1_u5g57")]
 position = Vector2(861, 475)
 still_image = ExtResource("2_gbtlj")
-event_id = "test2"
+event_id = "demo_event_go_room1"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clickers/Clicker2" unique_id=1250612019]
 shape = SubResource("RectangleShape2D_q3oo3")
