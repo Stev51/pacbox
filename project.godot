@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="PACBox"
-run/main_scene="uid://c186q2k21dmw6"
+config/name="PACBox Template"
+run/main_scene="uid://bt886n25a1ofi"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/img/icon.svg"
+
+[autoload]
+
+Events="*uid://d4m4st3j3xjnq"
 
 [global_group]
 
