@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://cttc810i634av"]
 
 [ext_resource type="PackedScene" uid="uid://coxckt01weaih" path="res://scenes/pacbox/clicker.tscn" id="1_u5g57"]
+[ext_resource type="Texture2D" uid="uid://b2c717dfd538w" path="res://assets/img/bg/bg2.jpg" id="1_unl4h"]
 [ext_resource type="Texture2D" uid="uid://cve5y8yu2u00b" path="res://assets/img/icon.svg" id="2_gbtlj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q3oo3"]
 size = Vector2(128, 128)
 
 [node name="DemoRoom2" type="Node2D" unique_id=285811660]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1284599918]
+texture = ExtResource("1_unl4h")
+centered = false
 
 [node name="Clickers" type="Node2D" parent="." unique_id=1752323861]
 

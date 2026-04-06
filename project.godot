@@ -18,6 +18,7 @@ config/icon="res://assets/img/icon.svg"
 [autoload]
 
 PACBox="*uid://c186q2k21dmw6"
+FadeScreen="*uid://bhd7r43wes5iy"
 
 [global_group]
 

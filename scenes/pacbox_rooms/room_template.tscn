@@ -2,4 +2,7 @@
 
 [node name="RoomTemplate" type="Node2D" unique_id=285811660]
 
+[node name="Background" type="Sprite2D" parent="." unique_id=850041122]
+centered = false
+
 [node name="Clickers" type="Node2D" parent="." unique_id=1752323861]

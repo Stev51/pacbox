@@ -8,5 +8,6 @@ script = ExtResource("1_4e1fo")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1733266705]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1535579500]
+visible = false
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

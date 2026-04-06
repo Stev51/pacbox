@@ -7,11 +7,16 @@ enum DisplayMode {STILL_IMAGE, ANIMATED_IMAGE, HIDDEN_IMAGE}
 @export var animated_image: SpriteFrames
 @export var display_mode: DisplayMode = DisplayMode.STILL_IMAGE
 @export var event_id: String = "DEFAULT"
+@export var flag_id: String = ""
 
 @onready var still_sprite_node = $Sprite2D
 @onready var anim_sprite_node = $AnimatedSprite2D
 
 func _ready() -> void:
+	
+	if not flag_id.is_empty():
+		if not PACBox.get_flag(flag_id):
+			visible = false
 	
 	still_sprite_node.texture = still_image
 	anim_sprite_node.sprite_frames = animated_image
