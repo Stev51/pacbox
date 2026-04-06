@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://coxckt01weaih"]
+
+[ext_resource type="Script" uid="uid://dphn8xkdlyj0q" path="res://scripts/pacbox/clicker.gd" id="1_4e1fo"]
+
+[node name="Clicker" type="Node2D" unique_id=1396895806]
+script = ExtResource("1_4e1fo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1733266705]
