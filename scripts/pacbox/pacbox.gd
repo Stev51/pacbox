@@ -72,3 +72,6 @@ func switch_room(id: String) -> bool:
 
 func queue_dialog(id: String) -> void:
 	Dialogic.start(id)
+
+func is_dialog_active() -> bool:
+	return (Dialogic.current_timeline != null)
