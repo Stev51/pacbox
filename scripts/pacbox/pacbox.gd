@@ -69,3 +69,6 @@ func switch_room(id: String) -> bool:
 	room_node.add_child(new_room)
 	
 	return true
+
+func queue_dialog(id: String) -> void:
+	Dialogic.start(id)
