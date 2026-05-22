@@ -17,7 +17,7 @@ centered = false
 [node name="Clickers" type="Node2D" parent="." unique_id=1752323861]
 
 [node name="Clicker1" parent="Clickers" unique_id=881771067 instance=ExtResource("1_bdqe5")]
-position = Vector2(312, 157)
+position = Vector2(312, 160)
 still_image = ExtResource("2_u5lcn")
 hover_image = ExtResource("4_iwqjt")
 event_id = "demo_event_dialog_1"
