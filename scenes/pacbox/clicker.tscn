@@ -13,6 +13,10 @@ visible = false
 [node name="HoverImg" type="Sprite2D" parent="." unique_id=1068636024]
 visible = false
 
+[node name="HoverSound" type="AudioStreamPlayer" parent="." unique_id=1030558179]
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=1933397200]
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

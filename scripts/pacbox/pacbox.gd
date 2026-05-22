@@ -5,6 +5,8 @@ extends Node2D
 
 @onready var room_node = $Room
 
+var hoverable = true
+
 func _ready() -> void:
 	
 	var viewport = get_viewport()
@@ -43,6 +45,8 @@ func set_flag(key: String, val: bool = true) -> bool:
 
 func fade_to_room(id: String) -> bool:
 	
+	hoverable = false
+	
 	FadeScreen.fade_out()
 	await FadeScreen.fade_out_finished
 	
@@ -55,10 +59,13 @@ func fade_to_room(id: String) -> bool:
 
 func switch_room(id: String) -> bool:
 	
+	hoverable = false
+	
 	var path_name = "res://scenes/pacbox_rooms/" + id + ".tscn"
 	
 	if not ResourceLoader.exists(path_name):
 		print("ERROR: Attempted to switch to a nonexistent room scene: " + path_name)
+		hoverable = true
 		return false
 	
 	var new_room = load(path_name).instantiate()
@@ -67,6 +74,8 @@ func switch_room(id: String) -> bool:
 		child.queue_free()
 	
 	room_node.add_child(new_room)
+	
+	hoverable = true
 	
 	return true
 
