@@ -1,2 +1,1 @@
 - Story flag display (inventory adjacent system)
-- Text boxes (Dialogic or custom?)
